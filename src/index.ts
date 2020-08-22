@@ -4,6 +4,8 @@ import { CsvFileReader } from './CsvFileReader'
 const reader = new CsvFileReader("football.csv")
 reader.read();
 
+console.log(reader)
+
 
 //enum - enumeration - just signaling to other engineers
 //this is a collection of closely related values

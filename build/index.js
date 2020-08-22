@@ -4,6 +4,7 @@ var CsvFileReader_1 = require("./CsvFileReader");
 //fs stands for file system
 var reader = new CsvFileReader_1.CsvFileReader("football.csv");
 reader.read();
+console.log(reader);
 //enum - enumeration - just signaling to other engineers
 //this is a collection of closely related values
 var matchResult;
