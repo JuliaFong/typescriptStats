@@ -1,5 +1,5 @@
 import { CsvFileReader } from './CsvFileReader'
-import { MatchResult } from './MatchResult'
+import { MatchResult } from './MatchResult';
 //fs stands for file system
 
 const reader = new CsvFileReader("football.csv")
