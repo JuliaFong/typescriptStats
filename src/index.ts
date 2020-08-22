@@ -11,12 +11,22 @@ const matches = fs
 });
 
 
+//enum - enumeration - just signaling to other engineers
+//this is a collection of closely related values
+
+enum matchResult  {
+    HomeWin = "H",
+    AwayWin = "A",
+    Draw = "D"
+}
+
+
 let manUnitedWins = 0;
 
 for (let match of matches) {
-    if (match[1] === "Man United" && match[5] === "H") {
+    if (match[1] === "Man United" && match[5] === matchResult.HomeWin) {
         manUnitedWins++;
-    } else if (match[2] === "Man United" && match[5] === "A") {
+    } else if (match[2] === "Man United" && match[5] === matchResult.AwayWin) {
         manUnitedWins++
     }
 }
