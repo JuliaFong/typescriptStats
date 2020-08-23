@@ -1,13 +1,14 @@
 import { MatchReader } from './MatchReader';
+import { CsvFileReader } from './CsvFileReader';
 import { MatchResult } from './MatchResult';
 //fs stands for file system
 
-const reader = new MatchReader("football.csv")
-reader.read();
+// create object for 'DataReader' interface
+const csvFileReader = new CsvFileReader("Football.csv")
 
-console.log(reader.data[0])
-
-const dateOfFirstMatch = reader.data[0][0]
+//create an instance of MatchReader and pass in something
+//for the 'DataReader' interface
+const MatchReader = new MatchReader(csvFileReader)
 
 let manUnitedWins = 0;
 

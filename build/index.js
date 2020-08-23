@@ -1,12 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var MatchReader_1 = require("./MatchReader");
+var CsvFileReader_1 = require("./CsvFileReader");
 var MatchResult_1 = require("./MatchResult");
 //fs stands for file system
-var reader = new MatchReader_1.MatchReader("football.csv");
-reader.read();
-console.log(reader.data[0]);
-var dateOfFirstMatch = reader.data[0][0];
+// create object for 'DataReader' interface
+var csvFileReader = new CsvFileReader_1.CsvFileReader("Football.csv");
+//create an instance of MatchReader and pass in something
+//for the 'DataReader' interface
+var MatchReader = new MatchReader(csvFileReader);
 var manUnitedWins = 0;
 for (var _i = 0, _a = reader.data; _i < _a.length; _i++) {
     var match = _a[_i];
