@@ -17,4 +17,4 @@ for (var _i = 0, _a = reader.data; _i < _a.length; _i++) {
         manUnitedWins++;
     }
 }
-console.log("Man United won " + manUnitedWins + " games");
+console.log("Man United won " + manUnitedWins + " game");

@@ -19,4 +19,4 @@ for (let match of reader.data) {
     }
 }
 
-console.log(`Man United won ${manUnitedWins} games`)
+console.log(`Man United won ${manUnitedWins} game`)
