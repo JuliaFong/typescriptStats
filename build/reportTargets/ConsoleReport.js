@@ -1,12 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ConsoleReports = void 0;
-var ConsoleReports = /** @class */ (function () {
-    function ConsoleReports() {
+exports.ConsoleReport = void 0;
+var ConsoleReport = /** @class */ (function () {
+    function ConsoleReport() {
     }
-    ConsoleReports.prototype.print = function (report) {
+    ConsoleReport.prototype.print = function (report) {
         console.log(report);
     };
-    return ConsoleReports;
+    return ConsoleReport;
 }());
-exports.ConsoleReports = ConsoleReports;
+exports.ConsoleReport = ConsoleReport;
