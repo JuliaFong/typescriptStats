@@ -1,5 +1,5 @@
 # Stats
-* List out the best footballers
+* List out wins in football
 
 # Learning Goals
 * Learn how to manipulate large amounts of CSV data
