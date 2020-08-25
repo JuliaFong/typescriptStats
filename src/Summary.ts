@@ -13,7 +13,7 @@ export interface OutputTarget {
 export class Summary {
     static winsAnalysisWithHtmlReport() {
         return new Summary(
-            new WinsAnalysis(),
+            new WinsAnalysis('Man United'),
             new HtmlReport()
         )
     }
@@ -21,7 +21,7 @@ export class Summary {
     constructor(
         public analyzer: Analyzer, 
         public outputTarget: OutputTarget) {}
-        
+
     buildAndPrintReport(matches: MatchData[]): void {
        const output = this.analyzer.run(matches);
        this.outputTarget.print(output);

@@ -8,4 +8,4 @@ export type MatchData = [
     number,
     MatchResult,
     string
-]
+];

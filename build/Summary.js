@@ -9,7 +9,7 @@ var Summary = /** @class */ (function () {
         this.outputTarget = outputTarget;
     }
     Summary.winsAnalysisWithHtmlReport = function () {
-        return new Summary(new WinsAnalysis_1.WinsAnalysis(), new HtmlReport_1.HtmlReport());
+        return new Summary(new WinsAnalysis_1.WinsAnalysis('Man United'), new HtmlReport_1.HtmlReport());
     };
     Summary.prototype.buildAndPrintReport = function (matches) {
         var output = this.analyzer.run(matches);
